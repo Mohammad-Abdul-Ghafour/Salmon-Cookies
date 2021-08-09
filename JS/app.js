@@ -6,6 +6,7 @@ let totalHours=[];
 let divEl = document.getElementById('citySails');
 let tableEl = document.createElement('table');
 divEl.appendChild(tableEl);
+
 function Citys(cityName, minCust, maxCust, avgSail) {
     this.cityName = cityName;
     this.minCust = minCust;
