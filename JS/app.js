@@ -1,6 +1,6 @@
 'use strict'
 
-let workingHours = ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', 'Total: '];
+let workingHours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', 'Daily Location Total'];
 let citysArr = [];
 let totalHours=[];
 let divEl = document.getElementById('citySails');
@@ -70,65 +70,10 @@ function tableHeader(){
     trEl.appendChild(thEl1);
     thEl1.textContent = 'City Name';
 
-    let thEl2 = document.createElement('th');
+    for (let i=0;i<workingHours.length;i++){
+        let thEl2 = document.createElement('th');
     trEl.appendChild(thEl2);
-    thEl2.textContent = '6.00 am';
-
-    let thEl3 = document.createElement('th');
-    trEl.appendChild(thEl3);
-    thEl3.textContent = '7.00 am';
-
-    let thEl4 = document.createElement('th');
-    trEl.appendChild(thEl4);
-    thEl4.textContent = '8.00 am';
-    
-    let thEl5 = document.createElement('th');
-    trEl.appendChild(thEl5);
-    thEl5.textContent = '9.00 am';
-
-    let thEl6 = document.createElement('th');
-    trEl.appendChild(thEl6);
-    thEl6.textContent = '10.00 am';
-
-    let thEl7 = document.createElement('th');
-    trEl.appendChild(thEl7);
-    thEl7.textContent = '11.00 am';
-
-    let thEl8 = document.createElement('th');
-    trEl.appendChild(thEl8);
-    thEl8.textContent = '12.00 pm';
-
-    let thEl9 = document.createElement('th');
-    trEl.appendChild(thEl9);
-    thEl9.textContent = '1.00 pm';
-
-    let thEl10 = document.createElement('th');
-    trEl.appendChild(thEl10);
-    thEl10.textContent = '2.00 pm';
-
-    let thEl11 = document.createElement('th');
-    trEl.appendChild(thEl11);
-    thEl11.textContent = '3.00 pm';
-
-    let thEl12 = document.createElement('th');
-    trEl.appendChild(thEl12);
-    thEl12.textContent = '4.00 pm';
-
-    let thEl13 = document.createElement('th');
-    trEl.appendChild(thEl13);
-    thEl13.textContent = '5.00 pm';
-
-    let thEl14 = document.createElement('th');
-    trEl.appendChild(thEl14);
-    thEl14.textContent = '6.00 pm';
-
-    let thEl15 = document.createElement('th');
-    trEl.appendChild(thEl15);
-    thEl15.textContent = '7.00 pm';
-
-    let thEl16 = document.createElement('th');
-    trEl.appendChild(thEl16);
-    thEl16.textContent = 'Daily Location Total';
+    thEl2.textContent = workingHours[i];}
 }
 tableHeader();
 
@@ -153,7 +98,6 @@ for(let i =0;i<this.avgSailPerHour.length +1 ;i++){
 for (let i = 0; i < citysArr.length; i++) {
     citysArr[i].render();
 }
-
 
 function tableFooter(){
     let trEl = document.createElement('tr')
