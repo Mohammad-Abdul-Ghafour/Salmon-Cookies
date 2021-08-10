@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    background-image: radial-gradient(circle,#ffb75e, #ed8f03);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    border-radius: 0px 0px 50% 50% ;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    position:relative;
+}
+#left{
+    width: 30%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#left li{
+    display: inline-block;
+}
+
+header h1 {
+    display: inline-block;
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 400%;
+    font-family: 'Knewave', cursive;
+    color: #bf2315;
+    text-shadow: 2px 2px 4px #000000;
+}
+#right{
+    width: 30%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#right li{
+    display: inline-block ;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 4px #000000;
+    font-size: 130%;
+}
+a:hover{
+    color: black;
+}
+#top{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 150px;
+    background-color: whitesmoke;
+}
+#top h2{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 120px;
+    margin-bottom: 20px;
+    font-size: 200%;
+    font-weight: bolder;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+#top h4{
+    color: tomato;
+    opacity: 0.5;
+    font-style: italic;
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+}
+#top div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#top iframe{
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    height: 300px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+#middle{
+    /* height: 1000px; */
+    border-radius: 50% 50% 0% 0% ;
+    margin-top: -100px;
+    /* background-color: white; */
+    background-image:radial-gradient(circle,#434343, #000000);
+    /* width: 100%; */
+    height: 200px;
+    color: black;
+    text-align: center;
+}
+#openinghours{
+    background-image:radial-gradient(circle,#434343, #000000);
+    height: 1200px;
+    /* width: 90%; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10% 10% 0% 0% ;
+    margin-top: -100px;
+    /* height: 200px; */
+    color: white;
+    text-align: center;
+
+}
+#openinghours h2 {
+    padding-top: 120px;
+}
+#background{
+    width: 100%;
+    height: 800px;
+    margin-top: -200px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+opacity: 80%;
+z-index: 1;
+}
+#info{
+    background: -webkit-linear-gradient(rgb(87, 85, 85), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    position:relative;
+    margin-top: -450px;
+    z-index: 2;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bolder;
+    margin-bottom: 20px; 
+}
+#Paragraph{
+    position:relative;
+    z-index: 2;
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: white; */
+    opacity: 1;
+}
+#Paragraph h2, #Paragraph p{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Paragraph p{
+    color: black;
+    /* font-weight: bolder; */
+    position: relative;
+    z-index: 3;
+    font-size: 160%;
+}
+#backgroundParagraph{
+    background-color: whitesmoke;
+    opacity: 0.8;
+    margin-top: -280px;
+    height: 320px;
+    width: 100%;
+    opacity: 0.7;
+    border-radius: 40px ;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+
+}#contact{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact h2{
+padding-top: 40px;
+padding-bottom: 20px;
+}
+#city{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+#tableheader{
+    padding: 25px 30px;
+}
+#contact div:last-child{
+    margin-top: 40px;
+}
