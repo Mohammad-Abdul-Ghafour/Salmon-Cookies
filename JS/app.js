@@ -65,6 +65,7 @@ lima.totals();
 function tableHeader(){
     let trEl = document.createElement('tr')
     tableEl.appendChild(trEl);
+    trEl.setAttribute('id','tableheader')
 
     let thEl1 = document.createElement('th');
     trEl.appendChild(thEl1);
@@ -80,9 +81,11 @@ tableHeader();
 Citys.prototype.render =function(){
     let trEl = document.createElement('tr')
     tableEl.appendChild(trEl);
+    trEl.setAttribute('class','city')
 
     let tdEl1 = document.createElement('td');
     trEl.appendChild(tdEl1);
+    
     tdEl1.textContent = this.cityName;
 for(let i =0;i<this.avgSailPerHour.length +1 ;i++){
     if(i==this.avgSailPerHour.length){
@@ -102,6 +105,7 @@ for (let i = 0; i < citysArr.length; i++) {
 function tableFooter(){
     let trEl = document.createElement('tr')
     tableEl.appendChild(trEl);
+    trEl.setAttribute('class','city')
 
     let thEl1 = document.createElement('td');
     trEl.appendChild(thEl1);
