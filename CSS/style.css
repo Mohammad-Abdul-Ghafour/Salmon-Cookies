@@ -74,3 +74,37 @@ color: white;
     background-color: black;
     color: white;
 }
+#newcity{
+    width: 960px;
+    text-align: center;
+padding: 20px 0;
+    margin-top: 40px;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#newcity legend{
+    margin: 20px 0;
+    font-size: 180%;
+}
+#submitbtn{
+    background-color:#a12418;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 110%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#submitbtn:hover{
+    background-color: black;
+
+}
+#error1 p, #error2 p, #error3 p, #error4 p{
+    color: red;
+    border: 1px solid red;
+    padding: 10px 0;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
