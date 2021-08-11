@@ -117,3 +117,58 @@ for(let i=0;i<totalHours.length;i++){
     thEl2.textContent = totalHours[i];}
 }
 tableFooter();
+
+let theForm = document.getElementById('newcity')
+theForm.addEventListener('submit',function(event){
+event.preventDefault();
+
+let cityName = event.target.cityName.value
+let minCust = event.target.minCust.value
+let maxCust = event.target.maxCust.value
+while(minCust>maxCust){
+    let errorname = document.getElementById('error3')
+    let errorfield = document.createElement('p')
+    errorname.appendChild(errorfield)
+    errorfield.textContent = "The minimum value should not be greater than the max value"
+    Event. stopPropation() 
+}
+let avgSale = event.target.avgSale.value
+
+
+let errorarr = [cityName,minCust,maxCust,avgSale]
+let errorplace = ["error1","error2","error3","error4"]
+
+for(let i = 0 ; i<errorarr.length;i++){
+    let errorname = document.getElementById(`${errorplace[i]}`)
+    if(errorname.firstChild){
+        errorname.removeChild(errorname.firstChild)
+    }
+}
+
+
+for(let i = 0 ; i<errorarr.length;i++){
+
+    let errorname = document.getElementById(`${errorplace[i]}`)
+    let errorfield = document.createElement('p')
+    console.log(errorname)
+if(errorarr[i]==""){
+    errorname.appendChild(errorfield)
+    errorfield.textContent = "please fill out this field"
+    break
+}else if(i==errorarr.length-1){
+    tableEl.deleteRow(tableEl.rows.length - 1)
+
+let addCity = new Citys(cityName,minCust,maxCust,avgSale)
+addCity.generateRandomNumber(addCity.minCust,addCity.maxCust)
+addCity.totals();
+addCity.render();
+tableFooter();
+document.getElementById('newcity').reset()
+
+}
+}
+
+
+
+
+})
