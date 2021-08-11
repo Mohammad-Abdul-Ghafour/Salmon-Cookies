@@ -125,13 +125,7 @@ event.preventDefault();
 let cityName = event.target.cityName.value
 let minCust = event.target.minCust.value
 let maxCust = event.target.maxCust.value
-while(minCust>maxCust){
-    let errorname = document.getElementById('error3')
-    let errorfield = document.createElement('p')
-    errorname.appendChild(errorfield)
-    errorfield.textContent = "The minimum value should not be greater than the max value"
-    Event. stopPropation() 
-}
+
 let avgSale = event.target.avgSale.value
 
 
@@ -145,6 +139,13 @@ for(let i = 0 ; i<errorarr.length;i++){
     }
 }
 
+while(minCust>maxCust){
+    let errorname = document.getElementById('error3')
+    let errorfield = document.createElement('p')
+    errorname.appendChild(errorfield)
+    errorfield.textContent = "The minimum value should not be greater than the max value"
+    Event. stopPropation() 
+}
 
 for(let i = 0 ; i<errorarr.length;i++){
 
